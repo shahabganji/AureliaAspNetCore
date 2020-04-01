@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 
-namespace AureliaAspNetCore.AureliaHelpers.SpaServices.Util
+namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.Util
 {
     
         internal static class LoggerFinder

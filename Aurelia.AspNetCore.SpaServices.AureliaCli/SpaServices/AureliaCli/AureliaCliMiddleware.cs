@@ -4,14 +4,14 @@ using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using AureliaAspNetCore.AureliaHelpers.NodeServices.Npm;
-using AureliaAspNetCore.AureliaHelpers.NodeServices.Util;
-using AureliaAspNetCore.AureliaHelpers.SpaServices.Util;
+using Aurelia.AspNetCore.SpaServices.AureliaCli.NodeServices.Npm;
+using Aurelia.AspNetCore.SpaServices.AureliaCli.NodeServices.Util;
+using Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.Util;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.SpaServices;
 using Microsoft.Extensions.Logging;
 
-namespace AureliaAspNetCore.AureliaHelpers.SpaServices.AureliaCli
+namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
 {
     internal static class AureliaCliMiddleware
     {

@@ -17,6 +17,9 @@
         <None Remove="$(SpaRoot)**" />
         <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Aurelia.AspNetCore.SpaServices.AureliaCli\Aurelia.AspNetCore.SpaServices.AureliaCli.csproj" />
+    </ItemGroup>
     
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
         <!-- Ensure Node.js is installed -->

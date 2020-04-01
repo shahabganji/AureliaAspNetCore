@@ -1,4 +1,4 @@
-using AureliaAspNetCore.AureliaHelpers.SpaServices.AureliaCli;
+using Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;

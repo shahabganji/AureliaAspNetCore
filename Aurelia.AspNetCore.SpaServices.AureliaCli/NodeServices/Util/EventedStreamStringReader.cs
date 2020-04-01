@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace AureliaAspNetCore.AureliaHelpers.NodeServices.Util
+namespace Aurelia.AspNetCore.SpaServices.AureliaCli.NodeServices.Util
 {
     /// <summary>
     /// Captures the completed-line notifications from a <see cref="EventedStreamReader"/>,

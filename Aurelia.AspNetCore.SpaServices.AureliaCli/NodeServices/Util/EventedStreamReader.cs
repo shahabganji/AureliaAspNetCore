@@ -4,7 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace AureliaAspNetCore.AureliaHelpers.NodeServices.Util
+namespace Aurelia.AspNetCore.SpaServices.AureliaCli.NodeServices.Util
 {
     /// <summary>
     /// Wraps a <see cref="StreamReader"/> to expose an evented API, issuing notifications
