@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace AureliaAspNetCore.AureliaHelpers
+namespace AureliaAspNetCore.AureliaHelpers.SpaServices.Util
 {
     
         internal static class TaskTimeoutExtensions

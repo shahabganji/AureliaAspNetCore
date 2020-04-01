@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace AureliaAspNetCore.AureliaHelpers
+namespace AureliaAspNetCore.AureliaHelpers.SpaServices.Util
 {
     internal static class TcpPortFinder
     {

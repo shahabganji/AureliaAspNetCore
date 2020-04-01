@@ -6,11 +6,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using AureliaAspNetCore.AureliaHelpers.NodeServices.Npm;
 using AureliaAspNetCore.AureliaHelpers.NodeServices.Util;
+using AureliaAspNetCore.AureliaHelpers.SpaServices.Util;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.SpaServices;
 using Microsoft.Extensions.Logging;
 
-namespace AureliaAspNetCore.AureliaHelpers
+namespace AureliaAspNetCore.AureliaHelpers.SpaServices.AureliaCli
 {
     internal static class AureliaCliMiddleware
     {
@@ -71,7 +72,7 @@ namespace AureliaAspNetCore.AureliaHelpers
             logger.LogInformation($"Starting aurelia-cli on port {portNumber}...");
 
             var npmScriptRunner = new NpmScriptRunner(
-                sourcePath, npmScriptName , $" --port {portNumber} --hot", null);
+                sourcePath, npmScriptName , $" --port {portNumber}", null);
             npmScriptRunner.AttachToLogger(logger);
 
             Match openBrowserLine;

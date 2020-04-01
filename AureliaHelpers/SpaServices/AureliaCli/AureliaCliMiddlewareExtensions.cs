@@ -2,7 +2,7 @@ using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.SpaServices;
 
-namespace AureliaAspNetCore.AureliaHelpers
+namespace AureliaAspNetCore.AureliaHelpers.SpaServices.AureliaCli
 {
     public static class AureliaCliMiddlewareExtensions
     {
