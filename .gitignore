@@ -232,11 +232,17 @@ _Pvt_Extensions
 .fake/
 
 
+# Compiled files
 ClientApp/node_modules
 ClientApp/.vscode
 ClientApp/dist
 
-.idea/.idea.AureliaAspNetCore.dir/.idea/vcs.xml
+ClientApp/scripts
+ClientApp/src/environment.js
+ClientApp/src/environment.ts
+
+ClientApp/test/coverage-jest
+ClientApp/test/coverage-karma
 
 
 # You may want to customise this file depending on your Operating System
@@ -258,7 +264,9 @@ Thumbs.db
 # Ref: https://github.com/github/gitignore/blob/master/Global
 # Ref: https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
 # Ref: https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
-.idea
+.idea/*
+.idea/.idea.AureliaAspNetCore.dir/.idea/vcs.xml
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -268,11 +276,4 @@ Thumbs.db
 # Dependencies
 node_modules
 
-# Compiled files
-/scripts
-/src/environment.js
-/src/environment.ts
-/dist
-/test/coverage-jest
-/test/coverage-karma
 
