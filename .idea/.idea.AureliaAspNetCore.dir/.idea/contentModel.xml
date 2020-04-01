@@ -10,11 +10,6 @@
       <e p="ClientApp" t="Include">
         <e p=".editorconfig" t="Include" />
         <e p=".gitignore" t="Include" />
-        <e p=".vscode" t="Include">
-          <e p="extensions.json" t="Include" />
-          <e p="launch.json" t="Include" />
-          <e p="settings.json" t="Include" />
-        </e>
         <e p="aurelia_project" t="Include">
           <e p="aurelia.json" t="Include" />
           <e p="generators" t="Include">
@@ -47,24 +42,6 @@
         <e p="config" t="Include">
           <e p="environment.json" t="Include" />
           <e p="environment.production.json" t="Include" />
-        </e>
-        <e p="dist" t="Include">
-          <e p="app~f075b844.9aea7962d77b952a8415.bundle.map" t="Include" />
-          <e p="app~f075b844.9aea7962d77b952a8415.chunk.js" t="Include" />
-          <e p="favicon.ico" t="Include" />
-          <e p="index.html" t="Include" />
-          <e p="runtime~app.321fca62d539e7b9fce5.bundle.js" t="Include" />
-          <e p="runtime~app.321fca62d539e7b9fce5.bundle.map" t="Include" />
-          <e p="vendors~0ba1d959.2f40827d767063bf76e3.bundle.map" t="Include" />
-          <e p="vendors~0ba1d959.2f40827d767063bf76e3.chunk.js" t="Include" />
-          <e p="vendors~2a42e354.0e5e00787510584f2e78.bundle.map" t="Include" />
-          <e p="vendors~2a42e354.0e5e00787510584f2e78.chunk.js" t="Include" />
-          <e p="vendors~50e8d500.51399b701154572d34c0.bundle.map" t="Include" />
-          <e p="vendors~50e8d500.51399b701154572d34c0.chunk.js" t="Include" />
-          <e p="vendors~556c66f2.03f6a085869df367441f.bundle.map" t="Include" />
-          <e p="vendors~556c66f2.03f6a085869df367441f.chunk.js" t="Include" />
-          <e p="vendors~ecff2e3d.1301eacbf05a96051e7f.bundle.map" t="Include" />
-          <e p="vendors~ecff2e3d.1301eacbf05a96051e7f.chunk.js" t="Include" />
         </e>
         <e p="favicon.ico" t="Include" />
         <e p="index.ejs" t="Include" />
