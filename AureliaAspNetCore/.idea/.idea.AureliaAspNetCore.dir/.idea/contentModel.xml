@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".git/info/exclude" t="IncludeRecursive" />
+      <e p=".gitignore" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="AureliaAspNetCore.csproj" t="IncludeRecursive" />
+      <e p="AureliaHelpers" t="Include">
+        <e p="NodeServices" t="Include">
+          <e p="Npm" t="Include">
+            <e p="NpmScriptRunner.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="EventedStreamReader.cs" t="Include" />
+            <e p="EventedStreamStringReader.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SpaServices" t="Include">
+          <e p="AureliaCli" t="Include">
+            <e p="AureliaCliMiddleware.cs" t="Include" />
+            <e p="AureliaCliMiddlewareExtensions.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="LoggFinder.cs" t="Include" />
+            <e p="TaskTimeoutExtensions.cs" t="Include" />
+            <e p="TcpPortFinder.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ClientApp" t="Include">
+        <e p=".editorconfig" t="Include" />
+        <e p=".gitignore" t="Include" />
+        <e p="aurelia_project" t="Include">
+          <e p="aurelia.json" t="Include" />
+          <e p="generators" t="Include">
+            <e p="attribute.json" t="Include" />
+            <e p="attribute.ts" t="Include" />
+            <e p="binding-behavior.json" t="Include" />
+            <e p="binding-behavior.ts" t="Include" />
+            <e p="component.json" t="Include" />
+            <e p="component.ts" t="Include" />
+            <e p="element.json" t="Include" />
+            <e p="element.ts" t="Include" />
+            <e p="generator.json" t="Include" />
+            <e p="generator.ts" t="Include" />
+            <e p="task.json" t="Include" />
+            <e p="task.ts" t="Include" />
+            <e p="value-converter.json" t="Include" />
+            <e p="value-converter.ts" t="Include" />
+          </e>
+          <e p="tasks" t="Include">
+            <e p="build.json" t="Include" />
+            <e p="build.ts" t="Include" />
+            <e p="jest.json" t="Include" />
+            <e p="jest.ts" t="Include" />
+            <e p="run.json" t="Include" />
+            <e p="run.ts" t="Include" />
+            <e p="test.json" t="Include" />
+            <e p="test.ts" t="Include" />
+          </e>
+        </e>
+        <e p="config" t="Include">
+          <e p="environment.json" t="Include" />
+          <e p="environment.production.json" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="index.ejs" t="Include" />
+        <e p="node_modules/@babel/parser" t="IncludeRecursive" />
+        <e p="node_modules/@babel/types" t="IncludeRecursive" />
+        <e p="node_modules/@bcoe/v8-coverage" t="IncludeRecursive" />
+        <e p="node_modules/@jest/console" t="IncludeRecursive" />
+        <e p="node_modules/@jest/core" t="IncludeRecursive" />
+        <e p="node_modules/@jest/environment" t="IncludeRecursive" />
+        <e p="node_modules/@jest/fake-timers" t="IncludeRecursive" />
+        <e p="node_modules/@jest/reporters" t="IncludeRecursive" />
+        <e p="node_modules/@jest/source-map" t="IncludeRecursive" />
+        <e p="node_modules/@jest/test-result" t="IncludeRecursive" />
+        <e p="node_modules/@jest/test-sequencer" t="IncludeRecursive" />
+        <e p="node_modules/@jest/transform" t="IncludeRecursive" />
+        <e p="node_modules/@jest/types" t="IncludeRecursive" />
+        <e p="node_modules/@types" t="IncludeRecursive">
+          <e p="anymatch" t="IncludeRecursive" />
+          <e p="babel__generator" t="IncludeRecursive" />
+          <e p="babel__template" t="IncludeRecursive" />
+          <e p="babel__traverse" t="IncludeRecursive" />
+          <e p="events" t="IncludeRecursive" />
+          <e p="istanbul-lib-coverage" t="IncludeRecursive" />
+          <e p="istanbul-lib-report" t="IncludeRecursive" />
+          <e p="jest" t="IncludeRecursive" />
+          <e p="lodash" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+          <e p="source-list-map" t="IncludeRecursive" />
+          <e p="tapable" t="IncludeRecursive" />
+          <e p="uglify-js" t="IncludeRecursive" />
+          <e p="webpack" t="IncludeRecursive" />
+          <e p="webpack-sources" t="IncludeRecursive" />
+          <e p="yargs-parser" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules/acorn" t="IncludeRecursive" />
+        <e p="node_modules/ansi-colors" t="IncludeRecursive" />
+        <e p="node_modules/app-settings-loader" t="IncludeRecursive" />
+        <e p="node_modules/arg" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-animator-css" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-binding" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-bootstrapper" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-cli" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-dependency-injection" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-event-aggregator" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-framework" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-history" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-history-browser" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-hot-module-reload" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-loader" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-loader-default" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-loader-nodejs" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-loader-webpack" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-logging" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-logging-console" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-metadata" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-pal" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-pal-browser" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-pal-nodejs" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-path" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-polyfills" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-route-recognizer" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-router" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-task-queue" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-templating" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-templating-binding" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-templating-resources" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-templating-router" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-testing" t="IncludeRecursive" />
+        <e p="node_modules/aurelia-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/babel-jest" t="IncludeRecursive" />
+        <e p="node_modules/bs-logger" t="IncludeRecursive" />
+        <e p="node_modules/clean-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/collect-v8-coverage" t="IncludeRecursive" />
+        <e p="node_modules/commander" t="IncludeRecursive" />
+        <e p="node_modules/concat-with-sourcemaps" t="IncludeRecursive" />
+        <e p="node_modules/copy-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/css-loader" t="IncludeRecursive" />
+        <e p="node_modules/diff-sequences" t="IncludeRecursive" />
+        <e p="node_modules/domelementtype" t="IncludeRecursive" />
+        <e p="node_modules/duplicate-package-checker-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/expect" t="IncludeRecursive" />
+        <e p="node_modules/expose-loader" t="IncludeRecursive" />
+        <e p="node_modules/fast-json-stable-stringify" t="IncludeRecursive" />
+        <e p="node_modules/file-loader" t="IncludeRecursive" />
+        <e p="node_modules/gulp" t="IncludeRecursive" />
+        <e p="node_modules/html-loader" t="IncludeRecursive" />
+        <e p="node_modules/html-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/htmlparser2" t="IncludeRecursive" />
+        <e p="node_modules/istanbul-instrumenter-loader" t="IncludeRecursive" />
+        <e p="node_modules/jest" t="IncludeRecursive" />
+        <e p="node_modules/jest-changed-files" t="IncludeRecursive" />
+        <e p="node_modules/jest-cli" t="IncludeRecursive" />
+        <e p="node_modules/jest-config" t="IncludeRecursive" />
+        <e p="node_modules/jest-diff" t="IncludeRecursive" />
+        <e p="node_modules/jest-docblock" t="IncludeRecursive" />
+        <e p="node_modules/jest-each" t="IncludeRecursive" />
+        <e p="node_modules/jest-environment-jsdom" t="IncludeRecursive" />
+        <e p="node_modules/jest-environment-node" t="IncludeRecursive" />
+        <e p="node_modules/jest-get-type" t="IncludeRecursive" />
+        <e p="node_modules/jest-haste-map" t="IncludeRecursive" />
+        <e p="node_modules/jest-jasmine2" t="IncludeRecursive" />
+        <e p="node_modules/jest-leak-detector" t="IncludeRecursive" />
+        <e p="node_modules/jest-matcher-utils" t="IncludeRecursive" />
+        <e p="node_modules/jest-message-util" t="IncludeRecursive" />
+        <e p="node_modules/jest-mock" t="IncludeRecursive" />
+        <e p="node_modules/jest-regex-util" t="IncludeRecursive" />
+        <e p="node_modules/jest-resolve" t="IncludeRecursive" />
+        <e p="node_modules/jest-resolve-dependencies" t="IncludeRecursive" />
+        <e p="node_modules/jest-runner" t="IncludeRecursive" />
+        <e p="node_modules/jest-runtime" t="IncludeRecursive" />
+        <e p="node_modules/jest-serializer" t="IncludeRecursive" />
+        <e p="node_modules/jest-snapshot" t="IncludeRecursive" />
+        <e p="node_modules/jest-transform-stub" t="IncludeRecursive" />
+        <e p="node_modules/jest-util" t="IncludeRecursive" />
+        <e p="node_modules/jest-validate" t="IncludeRecursive" />
+        <e p="node_modules/jest-watcher" t="IncludeRecursive" />
+        <e p="node_modules/jest-worker" t="IncludeRecursive" />
+        <e p="node_modules/json-loader" t="IncludeRecursive" />
+        <e p="node_modules/mini-css-extract-plugin" t="IncludeRecursive" />
+        <e p="node_modules/minimatch" t="IncludeRecursive" />
+        <e p="node_modules/pirates" t="IncludeRecursive" />
+        <e p="node_modules/pretty-format" t="IncludeRecursive" />
+        <e p="node_modules/promise-polyfill" t="IncludeRecursive" />
+        <e p="node_modules/realpath-native" t="IncludeRecursive" />
+        <e p="node_modules/source-map" t="IncludeRecursive" />
+        <e p="node_modules/style-loader" t="IncludeRecursive" />
+        <e p="node_modules/terser" t="IncludeRecursive" />
+        <e p="node_modules/through2" t="IncludeRecursive" />
+        <e p="node_modules/tree-kill" t="IncludeRecursive" />
+        <e p="node_modules/ts-jest" t="IncludeRecursive" />
+        <e p="node_modules/ts-loader" t="IncludeRecursive" />
+        <e p="node_modules/ts-node" t="IncludeRecursive" />
+        <e p="node_modules/tslib" t="IncludeRecursive" />
+        <e p="node_modules/url-loader" t="IncludeRecursive" />
+        <e p="node_modules/v8-to-istanbul" t="IncludeRecursive" />
+        <e p="node_modules/vinyl-fs" t="IncludeRecursive" />
+        <e p="node_modules/webpack" t="IncludeRecursive" />
+        <e p="node_modules/webpack-bundle-analyzer" t="IncludeRecursive" />
+        <e p="node_modules/webpack-cli" t="IncludeRecursive" />
+        <e p="node_modules/webpack-dev-server" t="IncludeRecursive" />
+        <e p="node_modules/worker-farm" t="IncludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="README.md" t="Include" />
+        <e p="src" t="Include">
+          <e p="app.html" t="Include" />
+          <e p="app.ts" t="Include" />
+          <e p="main.ts" t="Include" />
+          <e p="resources" t="Include">
+            <e p="index.ts" t="Include" />
+          </e>
+        </e>
+        <e p="static" t="Include">
+          <e p="favicon.ico" t="Include" />
+        </e>
+        <e p="test" t="Include">
+          <e p="jest-pretest.ts" t="Include" />
+          <e p="unit" t="Include">
+            <e p="app.spec.ts" t="Include" />
+          </e>
+        </e>
+        <e p="tsconfig.json" t="Include" />
+        <e p="tslint.json" t="Include" />
+        <e p="types" t="Include">
+          <e p="fetch.d.ts" t="Include" />
+          <e p="system.d.ts" t="Include" />
+        </e>
+        <e p="webpack.config.js" t="Include" />
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="WeatherForecastController.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="AureliaAspNetCore.AssemblyInfo.cs" t="Include" />
+            <e p="AureliaAspNetCore.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include">
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="Error.cshtml" t="Include" />
+        <e p="Error.cshtml.cs" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="WeatherForecast.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+  </component>
+</project>
