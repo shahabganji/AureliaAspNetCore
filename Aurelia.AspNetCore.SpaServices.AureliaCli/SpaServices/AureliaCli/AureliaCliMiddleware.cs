@@ -36,17 +36,17 @@ namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
                 throw new ArgumentException("Cannot be null or empty", nameof(npmScriptName));
             }
 
-            // Start Angular CLI and attach to middleware pipeline
+            // Start Aurelia CLI and attach to middleware pipeline
             var appBuilder = spaBuilder.ApplicationBuilder;
             var logger = LoggerFinder.GetOrCreateLogger(appBuilder, LogCategoryName);
-            var angularCliServerInfoTask = StartAureliaCliServerAsync(sourcePath, npmScriptName, logger);
+            var aureliaCliServerInfoTask = StartAureliaCliServerAsync(sourcePath, npmScriptName, logger);
 
             // Everything we proxy is hardcoded to target http://localhost because:
             // - the requests are always from the local machine (we're not accepting remote
-            //   requests that go directly to the Angular CLI middleware server)
+            //   requests that go directly to the Aurelia CLI middleware server)
             // - given that, there's no reason to use https, and we couldn't even if we
-            //   wanted to, because in general the Angular CLI server has no certificate
-            var targetUriTask = angularCliServerInfoTask.ContinueWith(
+            //   wanted to, because in general the Aurelia CLI server has no certificate
+            var targetUriTask = aureliaCliServerInfoTask.ContinueWith(
                 task =>
                 {
                     var uri =new UriBuilder("http", "localhost", task.Result.Port).Uri;
@@ -59,7 +59,7 @@ namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
                 // the first request times out, subsequent requests could still work.
                 var timeout = spaBuilder.Options.StartupTimeout;
                 return targetUriTask.WithTimeout(timeout,
-                    $"The Angular CLI process did not start listening for requests " +
+                    $"The Aurelia CLI process did not start listening for requests " +
                     $"within the timeout period of {timeout.Seconds} seconds. " +
                     $"Check the log output for error information.");
             });
@@ -96,7 +96,7 @@ namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
             var uri = new Uri($"http://localhost:{portNumber}");//openBrowserLine.Groups[1].Value);
             var serverInfo = new AureliaCliServerInfo {Port = uri.Port};
 
-            // Even after the Angular CLI claims to be listening for requests, there's a short
+            // Even after the Aurelia CLI claims to be listening for requests, there's a short
             // period where it will give an error if you make a request too quickly
             await WaitForAureliaCliServerToAcceptRequests(uri).ConfigureAwait(false);
 

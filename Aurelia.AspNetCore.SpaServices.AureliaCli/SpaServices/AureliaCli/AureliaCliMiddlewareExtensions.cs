@@ -7,15 +7,15 @@ namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
     public static class AureliaCliMiddlewareExtensions
     {
         /// <summary>
-        /// Handles requests by passing them through to an instance of the Angular CLI server.
+        /// Handles requests by passing them through to an instance of the Aurelia CLI server.
         /// This means you can always serve up-to-date CLI-built resources without having
-        /// to run the Angular CLI server manually.
+        /// to run the Aurelia CLI server manually.
         ///
         /// This feature should only be used in development. For production deployments, be
-        /// sure not to enable the Angular CLI server.
+        /// sure not to enable the Aurelia CLI server.
         /// </summary>
         /// <param name="spaBuilder">The <see cref="ISpaBuilder"/>.</param>
-        /// <param name="npmScript">The name of the script in your package.json file that launches the Angular CLI process.</param>
+        /// <param name="npmScript">The name of the script in your package.json file that launches the Aurelia CLI process.</param>
         public static void UseAureliaCliServer(
             this ISpaBuilder spaBuilder,
             string npmScript)
