@@ -18,7 +18,9 @@
             Just create your own aurelia application with aurelia-cli in the ClientApp folder. 
         </Description>
         
-        <PackageLicenseUrl></PackageLicenseUrl>
+        <PackageLicenseUrl>https://licenses.nuget.org/Apache-2.0</PackageLicenseUrl>
+<!--        <PackageIconUrl></PackageIconUrl>-->
+        <PackageProjectUrl>https://github.com/shahabganji/AureliaAspNetCore</PackageProjectUrl>
         
     </PropertyGroup>
 
