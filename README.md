@@ -1,4 +1,4 @@
-## Aurelia.AspNetCore.
+## Aurelia.AspNetCore.SpaServices.AureliaCli
 
 There is an extension nuget package for easing the way you can run SPA applications. The microsoft built-in support is for Angular and React though. This library ease the way you can use the same techniques for Aurelia.
 
