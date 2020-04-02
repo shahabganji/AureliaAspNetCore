@@ -2,7 +2,24 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <Version>0.0.2</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>Aurelia.AspNetCore.SpaServices.AureliaCli</PackageId>
+        <Version>3.1.3</Version>
+        <Authors>Saeed Ganji</Authors>
+<!--        <Company></Company>-->
+
+        <PackageTags>Microsoft;Aurelia;Aurelia Cli;Spa;Spa Services;Cli;</PackageTags>
+        <Description>
+            This library is on top of the Microsoft Spa Services - https://github.com/dotnet/aspnetcore/tree/master/src/Middleware/SpaServices.Extensions/src 
+            It will provide the same functionality for Aurelia applications as the Angular and React, to be served via Asp.Net Core applications.
+            
+            Just create your own aurelia application with aurelia-cli in the ClientApp folder. 
+        </Description>
+        
+        <PackageLicenseUrl></PackageLicenseUrl>
+        
     </PropertyGroup>
 
     <ItemGroup>
