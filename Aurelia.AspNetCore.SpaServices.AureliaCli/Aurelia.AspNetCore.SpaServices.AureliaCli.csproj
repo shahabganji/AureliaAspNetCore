@@ -11,13 +11,13 @@
         <PackageTags>Microsoft;Aurelia;Aurelia Cli;Spa;Spa Services;Cli;</PackageTags>
         <Description>
             This library is on top of the Microsoft Spa Services - https://github.com/dotnet/aspnetcore/tree/master/src/Middleware/SpaServices.Extensions/src 
-            It will provide the same functionality for Aurelia applications as the Angular and React, to be served via Asp.Net Core applications.
-            
+            It provides functionality for Aurelia applications to be served via Asp.Net Core applications.            
             Just create your own aurelia application with aurelia-cli in the ClientApp folder. 
         </Description>
-        
-        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
-        <PackageProjectUrl>https://github.com/shahabganji/AureliaAspNetCore</PackageProjectUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryUrl>https://github.com/shahabganji/AureliaAspNetCore</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/shahabganji/AureliaAspNetCore</PackageProjectUrl>
         
     </PropertyGroup>
 
