@@ -1,17 +1,16 @@
-import {Aurelia} from 'aurelia-framework';
-import * as environment from '../config/environment.json';
-import {PLATFORM} from 'aurelia-pal';
+import Aurelia, { RouterConfiguration } from 'aurelia';
+import { MyApp } from './app/my-app';
+import { Navmenu } from "./navmenu/navmenu";
+import { MissingPage } from "./missing/missing-page";
+import { Counter } from './counter/counter';
+import { Fetchdata } from './fetchdata/fetchdata';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-export function configure(aurelia: Aurelia) {
-  aurelia.use
-    .standardConfiguration()
-    .feature(PLATFORM.moduleName('resources/index'));
-
-  aurelia.use.developmentLogging(environment.debug ? 'debug' : 'warn');
-
-  if (environment.testing) {
-    aurelia.use.plugin(PLATFORM.moduleName('aurelia-testing'));
-  }
-
-  aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
-}
+Aurelia
+  .register(Navmenu, MissingPage, Counter, Fetchdata)
+  .register(RouterConfiguration)
+  // To use HTML5 pushState routes, replace previous line with the following
+  // customized router config.
+  // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
+  .app(MyApp)
+  .start();

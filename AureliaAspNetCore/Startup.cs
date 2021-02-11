@@ -9,6 +9,7 @@ namespace AureliaAspNetCore
 {
     public class Startup
     {
+        private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +27,20 @@ namespace AureliaAspNetCore
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
+            });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                        builder =>
+                        {
+                        // Allow Anything
+                        builder
+                               .AllowAnyOrigin()
+                               .AllowAnyMethod()
+                               .AllowAnyHeader()
+                               ;
+                        });
             });
         }
 
@@ -46,6 +61,7 @@ namespace AureliaAspNetCore
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseRouting();
 

@@ -1,33 +1,65 @@
-# `client-app`
+# ClientApp
 
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
+This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
-For more information, go to https://aurelia.io/docs/cli/webpack
+## Start dev web server
 
-## Run dev app
+    npm start
 
-Run `npm start`, then open `http://localhost:8080`
+## Build the app in production mode
 
-You can change the standard webpack configurations from CLI easily with something like this: `npm start -- --open --port 8888`. However, it is better to change the respective npm scripts or `webpack.config.js` with these options, as per your need.
+    npm run build
 
-To enable Webpack Bundle Analyzer, do `npm run analyze` (production build).
+It builds all files to dist folder. To deploy to production server, copy all the `dist/*` files to production root folder.
 
-To enable hot module reload, do `npm start -- --hmr`.
+For example
+```
+dist/index.html
+dist/foo.12345.js
+```
+Copy to production root folder
+```
+root_folder/index.html
+root_folder/foo.12345.js
+```
 
-To change dev server port, do `npm start -- --port 8888`.
+## Unit Tests
 
-To change dev server host, do `npm start -- --host 127.0.0.1`
+    npm run test
 
-**PS:** You could mix all the flags as well, `npm start -- --host 127.0.0.1 --port 7070 --open --hmr`
+Run unit tests in watch mode.
 
-For long time aurelia-cli user, you can still use `au run` with those arguments like `au run --env prod --open --hmr`. But `au run` now simply executes `npm start` command.
+    npm run test:watch
 
-## Build for production
+Unit tests run in browser through [browser-do](https://github.com/3cp/browser-do). Please check scripts in `package.json` for more details.
 
-Run `npm run build`, or the old way `au build --env prod`.
+By default, browser-do shuts down browser after tests. To keep browser window open for inspection, pass additional argument `-k` or `--keep-open`.
 
-## Unit tests
+    npm run build:test && browser-do -k --mocha --browser chrome < dist/entry-bundle.js
 
-Run `au test` (or `au jest`).
+Unit tests in watch mode is executed through stand webpack watch mode and the help of [webpack-shell-plugin-next](https://github.com/s00d/webpack-shell-plugin-next).
 
-To run in watch mode, `au test --watch` or `au jest --watch`.
+## Analyze webpack bundle
+
+    npm run analyze
+
+## Cypress e2e test
+
+All e2e tests are in `cypress/integration/`.
+
+Run e2e tests with:
+
+    npm run test:e2e
+
+Note the `test:e2e` script uses start-server-and-test to boot up dev server on port 9000 first, then run cypress test, it will automatically shutdown the dev server after test was finished.
+
+To run Cypress interactively, do
+
+```bash
+# Start the dev server in one terminal
+npm start
+# Start Cypress in another terminal
+npx cypress open
+```
+
+For more information, visit https://www.cypress.io
