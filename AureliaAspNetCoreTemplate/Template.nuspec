@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>Aurelia2AspNetCore</id>
-        <version>5.0.0</version>
+        <id>Aurelia.AspNetCore</id>
+        <version>1.0.0</version>
         <description>A template to use Aurelia 2 with ASP.NET Core and Webpack 5</description>
         <authors>Saeed Ganji (shahabganji@gmail.com)</authors>
         <language>en-US</language>
         <projectUrl>https://github.com/shahabganji/AureliaAspNetCore</projectUrl>
         <licenseUrl>https://github.com/shahabganji/AureliaAspNetCore/blob/master/LICENSE</licenseUrl>
-        <iconUrl></iconUrl>
         <copyright>Copyright 2021: Saeed Ganji. All rights Reserved.</copyright>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <packageTypes>
