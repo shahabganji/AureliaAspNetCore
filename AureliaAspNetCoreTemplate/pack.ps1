@@ -1,0 +1,1 @@
+dotnet pack ".\Content\AureliaAspNetCore.csproj" -p:NuspecFile="Template.nuspec" -o ".\"

@@ -81,7 +81,7 @@ namespace Aurelia.AspNetCore.SpaServices.AureliaCli.SpaServices.AureliaCli
                 try
                 {
                     openBrowserLine = await npmScriptRunner.StdOut.WaitForMatch(
-                            new Regex("Project is running at (http\\S+)", RegexOptions.None, RegexMatchTimeout))
+                            new Regex(".*Compiled.*successfully.*", RegexOptions.None, RegexMatchTimeout))
                         .ConfigureAwait(false);
                 }
                 catch (EndOfStreamException ex)
